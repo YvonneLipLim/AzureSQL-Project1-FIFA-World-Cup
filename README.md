@@ -1,10 +1,10 @@
-# YLL_MS_T-SQL_P1_FIFAWorldCup
-NTUC LearningHub Transact-SQL Essentials For Data Extration Self-Inititated Project 1
+# YLL-AzureSQL-Project1-FIFA-World-Cup
+NTUC LearningHub Transact-SQL Essentials For Data Extraction Self-Initiated Project 1
 <br>
 <br>
 
 ## Importance of Kaggle Datasets for SQL and Data Visualization Practice:
-Kaggle, a popular platform for data science competitions and collaboration, offers a vast repository of diverse datasets. These datasets provide a valuable resource for practicing SQL queries and creating visualizations, which can significantly enhance my data analysis skills. By actively engaging with these datasets, learners can receive feedback from other data professionals, which can help he/she to improve their skills and learn new techniques.
+Kaggle, a popular platform for data science competitions and collaboration, offers a vast repository of diverse datasets. These datasets provide a valuable resource for practising SQL queries and creating visualizations, which can significantly enhance my data analysis skills. By actively engaging with these datasets, learners can receive feedback from other data professionals, which can help he/she improve their skills and learn new techniques.
 
 ## Key Objectives:
 
@@ -34,7 +34,7 @@ By creating visualizations, learners can:
 <h4>Content</h4>
 The dataset consists of previous Football World Cup records from 1930 to 2022:
 <ul>
-  <li>Position: Ranking of the total teams participated in the FIFA World Cup</li>
+  <li>Position: Ranking of the total teams that participated in the FIFA World Cup</li>
   <li>Team: Representing country</li>
   <li>Games Played: Total Matches played including knockout stage</li>
   <li>Win: The total number of games a team has won</li>
