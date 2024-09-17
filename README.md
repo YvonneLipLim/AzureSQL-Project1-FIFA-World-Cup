@@ -30,3 +30,18 @@ By creating visualizations, learners can:
 ## 📊 Kaggle Dataset:
 <img src="https://storage.googleapis.com/kaggle-datasets-images/854/1560/127b0b8c8b15b9eaa8a0c3f3e49ced0d/dataset-thumbnail.jpg">
 <p><a href="https://www.kaggle.com/datasets/iamsouravbanerjee/fifa-football-world-cup-dataset/data" target="_blank">FIFA - Football World Cup Dataset</a></p>
+
+<h4>Content</h4>
+The dataset consists of previous Football World Cup records from 1930 to 2022:
+<ul>
+  <li>Position: Ranking of the total teams participated in the FIFA World Cup</li>
+  <li>Team: Representing country</li>
+  <li>Games Played: Total Matches played including knockout stage</li>
+  <li>Win: The total number of games a team has won</li>
+  <li>Draw: The total number of games a team has to draw</li>
+  <li>Loss: The total number of games a team has lost</li>
+  <li>Goals For: The total number of goals scored in all matches</li>
+  <li>Goals Against: The total number of goals conceded, allowing opponents to score</li>
+  <li>Goals Difference: Difference between the number of goals a team has scored and the number of goals they had conceded</li>
+  <li>Points: To determine the ranking of the teams from the knockout stages to the progression of the final. Typically, the point system is as follows: Win: 3 points, Draw: 1 point and Loss: 0 point</li>
+</ul>
