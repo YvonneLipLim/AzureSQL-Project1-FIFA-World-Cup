@@ -1,6 +1,6 @@
---Query top 3 Team for each world cup
+--Query Top 3 Teams Per World Cup Year
 --Step 1: Create a View for Top3TeamsPerWorldCup
-CREATE VIEW Top3TeamsPerWorldCup AS
+CREATE VIEW Top4_Winning_Teams AS
 WITH CombinedData AS (
     SELECT [Position], [Team], [Win], [Draw], [Loss], [Goals_For] AS GoalsScored, [Goals_Against] AS GoalsLoss, [Points], '2022' AS Year
     FROM FIFA.dbo.FIFA2022
@@ -73,10 +73,15 @@ FROM (
     SELECT *, RANK() OVER (PARTITION BY Year ORDER BY Position ASC) AS TeamRank
     FROM CombinedData
 ) RankedTeams
-WHERE TeamRank <= 3;
+WHERE TeamRank <= 4;
 
 
---Step 2: Retreive records from Top3TeamsPerWorldCup
-SELECT *
-FROM dbo.Top3TeamsPerWorldCup
-ORDER BY Year DESC;
+--Query Top 4 Team for each World Cup
+SELECT [Year],
+    MAX(CASE WHEN TeamRank = 1 THEN Team END) AS Champion,
+    MAX(CASE WHEN TeamRank = 2 THEN Team END) AS "Runners_Up",
+    MAX(CASE WHEN TeamRank = 3 THEN Team END) AS "Third_Place",
+    MAX(CASE WHEN TeamRank = 4 THEN Team END) AS "Forth_Place"
+FROM dbo.Top4_WinningTeams
+GROUP BY Year
+ORDER BY [Year] DESC;
