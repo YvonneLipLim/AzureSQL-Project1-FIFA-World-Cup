@@ -1,14 +1,14 @@
-# YLL-AzureSQL-Project1-FIFA-World-Cup
-NTUC LearningHub Transact-SQL Essentials For Data Extraction Self-Initiated Project 1
+<h1>Azure SQL FIFA World Cup</h1>
+NTUC LearningHub Transact-SQL Essentials For Data Extraction Self-Initiated Project
 <br>
 <br>
 
-## Importance of Kaggle Datasets for SQL and Data Visualization Practice:
+<h3>Importance of Kaggle Datasets for SQL and Data Visualization Practice:</h3>
 Kaggle, a popular platform for data science competitions and collaboration, offers a vast repository of diverse datasets. These datasets provide a valuable resource for practising SQL queries and creating visualizations, which can significantly enhance my data analysis skills. By actively engaging with these datasets, learners can receive feedback from other data professionals, which can help he/she improve their skills and learn new techniques.
+<br><br>
 
-## Key Objectives:
-
-<h3>1. SQL Skill Development:</h3> 
+<h3>Key Objectives:</h3>
+<h4>1. SQL Skill Development:</h4> 
 By working with different datasets, learners can practice various SQL concepts such as:
 <ul>
   <li><b>Data Manipulation</b>: Selection, Filtering, Sorting and Aggregating Data</li>
@@ -18,7 +18,7 @@ By working with different datasets, learners can practice various SQL concepts s
 </ul>
 <br>
 
-<h3>2. Data Visualization:</h3> 
+<h4>2. Data Visualization:</h4> 
 By creating visualizations, learners can:
 <ul>
   <li><b>Understand Data Patterns</b>: Identify trends, outliers and correlations</li>
@@ -27,7 +27,7 @@ By creating visualizations, learners can:
 </ul>
 <br>
 
-## 📊 Kaggle Dataset:
+<h3>📊 Kaggle Dataset:</h3>
 <img src="https://storage.googleapis.com/kaggle-datasets-images/854/1560/127b0b8c8b15b9eaa8a0c3f3e49ced0d/dataset-thumbnail.jpg">
 <p><a href="https://www.kaggle.com/datasets/iamsouravbanerjee/fifa-football-world-cup-dataset/data" target="_blank">FIFA - Football World Cup Dataset</a></p>
 
