@@ -76,7 +76,7 @@ FROM (
 WHERE TeamRank <= 4;
 
 
---Query Top 4 Team for each World Cup
+--Step 2:Query Top 4 Team for each World Cup
 SELECT [Year],
     MAX(CASE WHEN TeamRank = 1 THEN Team END) AS Champion,
     MAX(CASE WHEN TeamRank = 2 THEN Team END) AS "Runners_Up",
