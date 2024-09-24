@@ -1,3 +1,5 @@
+--Query Top 4 Teams Per World Cup Year
+--Step 1: Create a View for Top3TeamsPerWorldCup
 CREATE VIEW [dbo].[Qualifying_Teams] AS
 WITH CombinedData AS (
     SELECT [Position], [Team], [Win], [Draw], [Loss], [Goals_For] AS GoalsScored, [Goals_Against] AS GoalsLoss, [Points], '2022' AS Year
@@ -71,3 +73,9 @@ FROM (
     SELECT *, RANK() OVER (PARTITION BY Year ORDER BY Position ASC) AS TeamRank
     FROM CombinedData
 ) RankedTeams
+
+    
+--Step 2: Query Qualifying Team for each World Cup
+SELECT *
+FROM [FIFA].[dbo].[Qualifying_Teams]
+ORDER BY [Year] DESC;
