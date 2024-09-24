@@ -1,4 +1,4 @@
---Query Top 3 Teams Per World Cup Year
+--Query Top 4 Teams Per World Cup Year
 --Step 1: Create a View for Top3TeamsPerWorldCup
 CREATE VIEW Top4_Winning_Teams AS
 WITH CombinedData AS (
