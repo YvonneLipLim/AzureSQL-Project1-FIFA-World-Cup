@@ -1,5 +1,4 @@
---Query Top 4 Teams from 1930 to 2022
---Step 1: Create a View to combined WorldCup results from 1930 to 2022 using UNION ALL function
+--Create a View to combined WorldCup results from 1930 to 2022 using UNION ALL function
 CREATE VIEW WorldCup_Combined_Results AS
 WITH CombinedData AS (
     SELECT [Position], [Team], [Games_Played] AS TotalGamesPlayed, [Win], [Draw], [Loss], [Goals_For] AS GoalsScored, [Goals_Against] AS GoalsLoss, [Points], '2022' AS Year
@@ -74,13 +73,3 @@ FROM (
     FROM CombinedData
 ) RankedTeams
 
-
---Step 2:Query Top 4 Team for each World Cup
-SELECT [Year],
-    MAX(CASE WHEN TeamRank = 1 THEN Team END) AS Champion,
-    MAX(CASE WHEN TeamRank = 2 THEN Team END) AS "Runner_Up",
-    MAX(CASE WHEN TeamRank = 3 THEN Team END) AS "Third_Place",
-    MAX(CASE WHEN TeamRank = 4 THEN Team END) AS "Fourth_Place"
-FROM dbo.WorldCup_Combined_Results
-GROUP BY Year
-ORDER BY [Year] DESC;
