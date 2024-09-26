@@ -26,7 +26,7 @@ By creating visualizations, learners can:
 <img src="https://storage.googleapis.com/kaggle-datasets-images/854/1560/127b0b8c8b15b9eaa8a0c3f3e49ced0d/dataset-thumbnail.jpg">
 <p><a href="https://www.kaggle.com/datasets/iamsouravbanerjee/fifa-football-world-cup-dataset/data" target="_blank">FIFA - Football World Cup Dataset</a></p>
 
-### Content
+### Data Content
 The dataset consists of previous Football World Cup records from 1930 to 2022:
 - **Position**: Ranking of the total teams that participated in the FIFA World Cup
 - **Team**: Representing country
