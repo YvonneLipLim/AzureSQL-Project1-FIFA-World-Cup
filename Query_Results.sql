@@ -1,6 +1,7 @@
 --Q1. Which teams qualified for the World Cup from 1930 to 2022?
-SELECT *
-FROM dbo.WorldCup_Combined_Results
+SELECT wc.Year, wc.TeamRank, wc.Team AS Team, tc.Continent, wc.TotalGamesPlayed, wc.Win, wc.Draw, wc.Loss, wc.GoalsScored, wc.GoalsLoss, wc.Points
+FROM FIFA.dbo.WorldCup_Combined_Results wc
+JOIN dbo.TeamContinents tc ON wc.Team = tc.TeamName
 ORDER BY [Year] DESC;
 
 
@@ -16,8 +17,9 @@ ORDER BY [Year] DESC;
 
 
 --Q3. Which were the teams that were eliminated at the knock-out stage from 1930 to 2022?
-SELECT *
-FROM dbo.WorldCup_Combined_Results
+SELECT wc.Year, wc.TeamRank, wc.Team AS Team, tc.Continent, wc.TotalGamesPlayed, wc.Win, wc.Draw, wc.Loss, wc.GoalsScored, wc.GoalsLoss, wc.Points
+FROM FIFA.dbo.WorldCup_Combined_Results wc
+JOIN dbo.TeamContinents tc ON wc.Team = tc.TeamName
 WHERE [TeamRank] > 16
 ORDER BY [Year] DESC;
 
