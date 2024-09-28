@@ -1,4 +1,5 @@
---Create a new table to classified the team into their respective continents
+--Create a new table to classify the teams into their respective continents
+--This would allow the data to be presented in a map chart, making more meaningful insights.
 CREATE TABLE TeamContinents (
     TeamName VARCHAR(100),
     Continent VARCHAR(100)
