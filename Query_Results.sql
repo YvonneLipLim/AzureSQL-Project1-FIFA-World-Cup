@@ -1,4 +1,5 @@
 --Q1. Which teams qualified for the World Cup from 1930 to 2022?
+--The results would consist of 11 columns after adding Continent column from dbo.TeamContinent table using JOIN 
 SELECT wc.Year, wc.TeamRank, wc.Team AS Team, tc.Continent, wc.TotalGamesPlayed, wc.Win, wc.Draw, wc.Loss, wc.GoalsScored, wc.GoalsLoss, wc.Points
 FROM FIFA.dbo.WorldCup_Combined_Results wc
 JOIN dbo.TeamContinents tc ON wc.Team = tc.TeamName
