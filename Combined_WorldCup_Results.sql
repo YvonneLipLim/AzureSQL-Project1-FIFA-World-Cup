@@ -1,4 +1,5 @@
---Create a View to combined WorldCup results from 1930 to 2022 using UNION ALL function
+--Create a View to combine all the WorldCup results from 1930 to 2022 using UNION ALL function
+--Rename the column name to make data more meaningful.
 CREATE VIEW WorldCup_Combined_Results AS
 WITH CombinedData AS (
     SELECT [Position], [Team], [Games_Played] AS TotalGamesPlayed, [Win], [Draw], [Loss], [Goals_For] AS GoalsScored, [Goals_Against] AS GoalsLoss, [Points], '2022' AS Year
