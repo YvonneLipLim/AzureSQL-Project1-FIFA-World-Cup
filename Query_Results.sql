@@ -60,3 +60,21 @@ SELECT Team,
 FROM FIFA.dbo.WorldCup_Combined_Results
 GROUP BY Team
 ORDER BY TotalPoints DESC, Team DESC;
+
+
+--Q6 Performance of the teams for each World Cup
+--The results would display the respective teams' points for each World Cup.
+SELECT wc.Team, 
+       tc.Continent, 
+       wc.Year,
+       SUM(wc.Win) AS Win,
+       SUM(wc.Draw) AS Draw,
+       SUM(wc.Loss) AS Lost,
+       SUM(wc.GoalsScored) AS TotalGoalsScored, 
+       SUM(wc.GoalsLoss) AS TotalGoalsLoss,
+       SUM(wc.GoalsScored) - SUM(wc.GoalsLoss) AS GoalsDifference,
+       SUM((wc.Win) * 3 + wc.Draw * 1) AS TotalPoints
+FROM FIFA.dbo.WorldCup_Combined_Results wc
+JOIN dbo.TeamContinents tc ON wc.Team = tc.TeamName
+GROUP BY wc.Team, tc.Continent, wc.Year
+ORDER BY wc.Team, wc.Year;
